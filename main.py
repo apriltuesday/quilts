@@ -4,10 +4,11 @@ import matplotlib.pyplot as plt
 
 PI = np.pi
 EPS = 1e-5
+N = 256
 IMAGE_DIR = 'images'
 
 
-def quilt(a, b, c, d, k, N):
+def quilt(a, b, c, d, k):
     A = np.zeros((N, N)) + EPS
     x = 0.1
     y = 0.3
@@ -43,10 +44,9 @@ def quilt(a, b, c, d, k, N):
 
 
 if __name__ == '__main__':
-    a = -0.46
-    b = 0.
-    c = 0.
-    d = -0.05
-    k = -2
-    N = 256
-    quilt(a, b, c, d, k, N)
+    a = np.random.rand() * 2 - 1
+    b = np.random.rand() * 2 - 1
+    c = np.random.rand() * 2 - 1
+    d = np.random.rand() * 2 - 1
+    k = np.random.randint(-2, 3)
+    quilt(a, b, c, d, k)
