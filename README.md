@@ -2,5 +2,5 @@
 
 Implementation from _Fearful Symmetry_ (Stewart and Golubitsky).
 
-# To-Do
+## To-Do
 * parameter space?
